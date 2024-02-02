@@ -40,6 +40,10 @@ class ReporteGeneral extends BaseController
         foreach($formularios_respuesta as $fr):
             $eje_x_seg = 'H';
             $eje_x_ter = 'I';
+
+            $eje_x_cuarto = 'BR' ;
+            $eje_x_quinto = 'BS' ;
+            $eje_x_sexto = 'BT';
             //$eje_y_seg = 2;
             $worksheet->getCell('A'.$eje_y)->setValue($fr->idformresp);
             $worksheet->getCell('B'.$eje_y)->setValue($fr->username);
@@ -59,7 +63,7 @@ class ReporteGeneral extends BaseController
                 //Convertir a objetos
                 $marca = json_decode($marca_json);
                 //Ajuste del offset del eje secundario
-                $eje_y_seg = $eje_y;
+                $eje_y_seg = $eje_y;               
                 
                 foreach($marca as $m)
                 {
@@ -68,19 +72,47 @@ class ReporteGeneral extends BaseController
                     //Imprimir la marca del Item
                     //$worksheet->getCell($eje_x_ter.$eje_y_seg)->setValue('marca'.$codigo);
                  
-                    //Imprimir el precio del item
-                    $worksheet->getCell($eje_x_seg.$eje_y_seg)->setValue($m->idmarca);
-                    //Imprimir la marca del Item
-                    $worksheet->getCell($eje_x_ter.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
-                    $eje_y_seg++;
+                    if($i->iditem <=31):
+                        //Imprimir el precio del item
+                        $worksheet->getCell($eje_x_seg.$eje_y_seg)->setValue($m->idmarca);
+                        //Imprimir la marca del Item
+                        $worksheet->getCell($eje_x_ter.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
+                        $eje_y_seg++;
+                    else:
+                        //Imprimir el precio del item
+                        $worksheet->getCell($eje_x_cuarto.$eje_y_seg)->setValue($m->idmarca);
+                        //Imprimir la marca del Item
+                        $worksheet->getCell($eje_x_quinto.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
+                        $worksheet->getCell($eje_x_sexto.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
+                        
+
+                        $eje_y_seg++;                       
+                    endif;
                 }
                 //Ajuste offset en el eje X secundario
                 $eje_x_seg++;
                 $eje_x_seg++;
-                //Ajuste offset eje y terciario
+                //Ajuste offset eje x terciario
                 $eje_x_ter++;
-                $eje_x_ter++;                
-                
+                $eje_x_ter++;
+                if($i->iditem > 31){
+
+                    $eje_x_cuarto++;
+                    $eje_x_cuarto++;
+                    $eje_x_cuarto++;
+
+                    $eje_x_quinto++;
+                    $eje_x_quinto++;
+                    $eje_x_quinto++;
+
+
+                    $eje_x_sexto++;
+                    $eje_x_sexto++;
+                    $eje_x_sexto++;
+                }
+
+            
+            
             endforeach;           
                        
             $eje_y = $eje_y_seg;            
