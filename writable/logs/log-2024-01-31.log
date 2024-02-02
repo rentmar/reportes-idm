@@ -1,0 +1,46 @@
+CRITICAL - 2024-01-31 22:12:35 --> ErrorException: fopen(upload/users.xlsx): Failed to open stream: No existe el fichero o el directorio
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php on line 117.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(upload/users.xlsx): Failed to open stream: No existe el fichero o el directorio', '/opt/lampp/htdocs/reportes/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php', 117)
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php(117): fopen('upload/users.xlsx', 'wb')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx.php(501): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('upload/users.xlsx')
+ 4 APPPATH/Controllers/ExcelExportController.php(35): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('upload/users.xlsx')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ExcelExportController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ExcelExportController))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:13:58 --> ParseError: syntax error, unexpected variable "$spreadsheet", expecting "function" or "const"
+in APPPATH/Controllers/ExcelExportController.php on line 13.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/reportes/app/Controllers/ExcelExportController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ExcelExportController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ExcelExportController')
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\ExcelExportController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:16:59 --> ParseError: syntax error, unexpected variable "$spreadsheet", expecting "function" or "const"
+in APPPATH/Controllers/ExcelExportController.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/reportes/app/Controllers/ExcelExportController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ExcelExportController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ExcelExportController')
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\ExcelExportController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:18:10 --> ParseError: syntax error, unexpected variable "$spreadsheet", expecting "function" or "const"
+in APPPATH/Controllers/Example.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/reportes/app/Controllers/Example.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Example')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Example')
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Example', true)
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:18:11 --> ParseError: syntax error, unexpected variable "$spreadsheet", expecting "function" or "const"
+in APPPATH/Controllers/Example.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/reportes/app/Controllers/Example.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Example')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Example')
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Example', true)
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

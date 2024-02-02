@@ -1,0 +1,118 @@
+CRITICAL - 2024-02-02 12:57:51 --> PhpOffice\PhpSpreadsheet\Reader\Exception: No reader found for type /opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php on line 78.
+ 1 APPPATH/Controllers/ReporteGeneral.php(16): PhpOffice\PhpSpreadsheet\IOFactory::createReader('/opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 12:58:29 --> PhpOffice\PhpSpreadsheet\Reader\Exception: No reader found for type /opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php on line 78.
+ 1 APPPATH/Controllers/ReporteGeneral.php(16): PhpOffice\PhpSpreadsheet\IOFactory::createReader('/opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 12:58:32 --> PhpOffice\PhpSpreadsheet\Reader\Exception: No reader found for type /opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php on line 78.
+ 1 APPPATH/Controllers/ReporteGeneral.php(16): PhpOffice\PhpSpreadsheet\IOFactory::createReader('/opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 13:03:11 --> PhpOffice\PhpSpreadsheet\Reader\Exception: No reader found for type /opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/IOFactory.php on line 78.
+ 1 APPPATH/Controllers/ReporteGeneral.php(18): PhpOffice\PhpSpreadsheet\IOFactory::createReader('/opt/lampp/htdocs/reportes/assets/info/marcas-precios-db.xlsx')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 16:20:34 --> ErrorException: Undefined property: stdClass::$idresp
+in APPPATH/Controllers/ReporteGeneral.php on line 34.
+ 1 APPPATH/Controllers/ReporteGeneral.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idresp', '/opt/lampp/htdocs/reportes/app/Controllers/ReporteGeneral.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 16:55:02 --> ParseError: syntax error, unexpected token "}"
+in APPPATH/Controllers/Prueba.php on line 47.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/reportes/app/Controllers/Prueba.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Prueba')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Prueba')
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Prueba', true)
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 17:26:21 --> ErrorException: Undefined variable $marca_json
+in APPPATH/Controllers/Prueba.php on line 69.
+ 1 APPPATH/Controllers/Prueba.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca_json', '/opt/lampp/htdocs/reportes/app/Controllers/Prueba.php', 69)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Prueba->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 17:28:03 --> ErrorException: Undefined variable $marca_json
+in APPPATH/Controllers/Prueba.php on line 70.
+ 1 APPPATH/Controllers/Prueba.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca_json', '/opt/lampp/htdocs/reportes/app/Controllers/Prueba.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Prueba->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 17:57:31 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate 2
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('2')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('2')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('2')
+ 4 APPPATH/Controllers/ReporteGeneral.php(69): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('2')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 18:55:49 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate AAAA9137
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('AAAA9137')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('AAAA9137')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('AAAA9137')
+ 4 APPPATH/Controllers/ReporteGeneral.php(82): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('AAAA9137')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 18:56:02 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate AAAA9137
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('AAAA9137')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('AAAA9137')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('AAAA9137')
+ 4 APPPATH/Controllers/ReporteGeneral.php(82): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('AAAA9137')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 18:56:42 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate AAAA9137
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('AAAA9137')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('AAAA9137')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('AAAA9137')
+ 4 APPPATH/Controllers/ReporteGeneral.php(82): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('AAAA9137')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 19:13:00 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate AEE
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('AEE')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('AEE')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('AEE')
+ 4 APPPATH/Controllers/ReporteGeneral.php(44): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('AEE')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-02 19:13:09 --> PhpOffice\PhpSpreadsheet\Exception: Invalid cell coordinate AEE
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php on line 43.
+ 1 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Cell/Coordinate.php(55): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('AEE')
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1262): PhpOffice\PhpSpreadsheet\Cell\Coordinate::indexesFromString('AEE')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php(1175): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('AEE')
+ 4 APPPATH/Controllers/ReporteGeneral.php(44): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell('AEE')
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ReporteGeneral->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReporteGeneral))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
