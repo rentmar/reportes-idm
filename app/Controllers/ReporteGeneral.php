@@ -74,15 +74,17 @@ class ReporteGeneral extends BaseController
                  
                     if($i->iditem <=31):
                         //Imprimir el precio del item
-                        $worksheet->getCell($eje_x_seg.$eje_y_seg)->setValue($m->idmarca);
+                        //$worksheet->getCell($eje_x_seg.$eje_y_seg)->setValue($m->idmarca);
+                        //Imprimir eñ ŕecio deñ item
+                        $worksheet->getCell($eje_x_seg.$eje_y_seg)->setValue($m->precio);
                         //Imprimir la marca del Item
                         $worksheet->getCell($eje_x_ter.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
                         $eje_y_seg++;
                     else:
                         //Imprimir el precio del item
-                        $worksheet->getCell($eje_x_cuarto.$eje_y_seg)->setValue($m->idmarca);
+                        $worksheet->getCell($eje_x_cuarto.$eje_y_seg)->setValue($m->precio_alto);
                         //Imprimir la marca del Item
-                        $worksheet->getCell($eje_x_quinto.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
+                        $worksheet->getCell($eje_x_quinto.$eje_y_seg)->setValue($m->precio_bajo);
                         $worksheet->getCell($eje_x_sexto.$eje_y_seg)->setValue($m->marca.'-'.$codigo.'-'.$idformresp);
                         
 
