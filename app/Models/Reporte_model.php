@@ -100,6 +100,35 @@ class Reporte_model extends Model
         return $results;        
     }
 
+    //Filtrar los formularios llenos por ciudad
+
+    public function getFormulariosRespPorCiudad($idciudad)
+    {
+        $db = \Config\Database::connect();
+        $sql =  "SELECT formulario_respuesta.idformresp, formulario_respuesta.rel_idusuario, users.username, formulario_respuesta.rel_idciudad, ciudad.idciudad, ciudad.nombre_ciudad, formulario_respuesta.rel_idzona, zona.idzona, zona.nombre_zona, formulario_respuesta.rel_idlugar, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.nombre_lugar AS nombre_de_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, formulario_respuesta.fecha_fc, formulario_respuesta.rel_iduiformulario   "
+                ."FROM formulario_respuesta     "
+                ."LEFT JOIN users ON users.id = formulario_respuesta.rel_idusuario     "
+                ."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad     "
+                ."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona     "
+                ."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar     "
+                ."WHERE formulario_respuesta.rel_iduiformulario = 1     "
+                ."AND formulario_respuesta.es_valido = 1     "
+                ."AND formulario_respuesta.rel_idciudad = ?     "
+                ."     "
+                ."     "
+                ."     "
+                ."     "
+                ."     "
+                ."     "
+                ."     "
+                ."     "
+                ."     ";
+        $query   = $db->query($sql, [$idciudad,]);
+        $results = $query->getResult();
+        $db->close();
+        return $results;
+    }
+
         
 
 }
